@@ -33,6 +33,11 @@ Designed for maximum flexibility, goose works with any LLM and supports multi-mo
 - [Responsible AI-Assisted Coding Guide](https://github.com/block/goose/blob/main/HOWTOAI.md)
 - [Governance](https://github.com/block/goose/blob/main/GOVERNANCE.md)
 
+## Building from Source
+- [Building goose CLI](https://github.com/block/goose/blob/main/BUILDING_CLI.md) - Build only the command-line interface
+- [Building goose Desktop (Linux)](https://github.com/block/goose/blob/main/BUILDING_LINUX.md) - Build the Desktop application
+- [Building with Docker](https://github.com/block/goose/blob/main/BUILDING_DOCKER.md) - Build and run with Docker
+
 ## Need Help?
 - [Diagnostics & Reporting](https://block.github.io/goose/docs/troubleshooting/diagnostics-and-reporting)
 - [Known Issues](https://block.github.io/goose/docs/troubleshooting/known-issues)
