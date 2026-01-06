@@ -444,3 +444,42 @@ If you're building from source to contribute to goose:
 - [Discord Community](https://discord.gg/goose-oss)
 - [GitHub Issues](https://github.com/block/goose/issues)
 - [Documentation](https://block.github.io/goose/docs)
+
+## Appendix: Minimal Repository Files
+
+If you want to minimize disk space, here's what you actually need for building the CLI:
+
+### Essential Files (Required)
+- `Cargo.toml` - Workspace definition
+- `Cargo.lock` - Dependency lock file
+- `rust-toolchain.toml` - Rust version specification
+- `crates/goose/` - Core library
+- `crates/goose-cli/` - CLI implementation
+- `crates/goose-mcp/` - MCP support
+- `crates/goose-bench/` - Benchmarking utilities
+
+### Documentation Files (Recommended)
+- `README.md` - Project overview
+- `BUILDING_CLI.md` - This build guide
+- `CONTRIBUTING.md` - Contributing guide
+- `LICENSE` - License information
+
+### Not Needed for CLI Only
+- `ui/desktop/` - Desktop application (Electron)
+- `crates/goose-server/` - Server for desktop app
+- `documentation/` - Website documentation source
+- `.github/` - CI/CD workflows
+- `examples/` - Example projects
+
+### Disk Space Requirements
+- Source code (essential): ~15-20 MB
+- Compiled dependencies (target/): ~2-3 GB
+- Final release binary: ~130 MB
+
+### Shallow Clone
+To minimize download size:
+```bash
+git clone --depth 1 https://github.com/block/goose.git
+```
+
+This downloads only the latest commit without full git history.
